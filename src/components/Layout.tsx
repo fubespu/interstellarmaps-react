@@ -20,9 +20,14 @@ const Layout = ({ children }) => {
                     About
                   </a>
                 </Link>
-                <Link href="/terms-of-sale">
+                <Link href="/faqs">
                   <a className="text-gray-800 hover:text-blue-600 p-1 transition">
-                    Terms of Sale
+                    FAQs
+                  </a>
+                </Link>
+                <Link href="/mars-maps">
+                  <a className="text-gray-800 hover:text-blue-600 p-1 transition">
+                    Maps of Mars
                   </a>
                 </Link>
               </nav>
@@ -38,7 +43,7 @@ const Layout = ({ children }) => {
                     />
                   </div>
                   <span className="text-lg font-medium">
-                    Headless Dropshipping Starter
+                    Interstellar Maps
                   </span>
                 </a>
               </Link>
@@ -113,7 +118,7 @@ const Layout = ({ children }) => {
             </a>
           </p>
           <nav className="flex items-center justify-end space-x-3 md:space-x-6">
-            <Link href="/about">
+            <Link href="/faqs">
               <a className="text-gray-800 hover:text-blue-600 p-1 transition text-sm">
                 FAQS
               </a>

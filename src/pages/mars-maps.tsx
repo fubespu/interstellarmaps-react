@@ -8,16 +8,18 @@ import { PrintfulProduct } from "../types";
 
 import ProductGrid from "../components/ProductGrid";
 
-type IndexPageProps = {
+type MarsPageProps = {
   products: PrintfulProduct[];
 };
 
-const IndexPage: React.FC<IndexPageProps> = ({ products }) => (
+const MarsPage: React.FC<MarsPageProps> = ({ products }) => (
   <>
     <div className="text-center pb-6 md:pb-12">
       <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">
-        The planet poster shop
+        Our super cool mars maps poster collection
       </h1>
+      <br></br>
+      <p>From the famous Valles Marineris to Olympus Mons, Mars is crowded with interesting geographic elements</p>
     </div>
 
     <ProductGrid products={products} />
@@ -48,4 +50,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default IndexPage;
+export default MarsPage;
